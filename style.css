@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     user-select: none;
+     font-family: "Comfortaa", sans-serif;
+}
+
+body{
+     display: grid;
+     place-content: center;
+     height: 100vh;
+     width: 100vw;
+}
+
+.container{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     gap: 20px;
+     padding: 30px;
+     box-shadow: 0px 0px 5px 1px rgb(0, 0, 0);
+     border-radius: 10px;
+     background: hsla(219, 79%, 66%, 0.692);
+}
+
+#displayPassword{
+     border: none;
+     width: 350px;
+     padding: 10px;
+     text-align: center;
+     justify-content: center;
+     text-align: center;
+     background: whitesmoke;
+     color: black;
+     border-top-left-radius: 10px;
+     border-bottom-left-radius: 10px;
+}
+
+.checkbox-container{
+     display: flex;
+     flex-direction: column;
+     gap: 10px;
+     justify-content: start;
+     align-items: center;
+     padding: 10px;
+     width: 250px;
+}
+
+.checkbox-option{
+     display: flex;
+     gap: 5px;
+     padding: 5px;
+     justify-content: space-between;
+     align-items: center;
+     width: 170px;
+}
+
+.checkbox-option label{
+     cursor: pointer;
+}
+
+.checkbox-option input{
+     cursor: pointer;
+}
+
+.checkbox-option-5{
+     display: flex;
+     flex-direction: column;
+     text-align: center;
+     padding: 10px;
+     width: 210px;
+}
+
+#generateBtn{
+     margin-top: 10px;
+     padding: 10px;
+     border-radius: 10px;
+     border: none;
+     background: burlywood;
+     color: black;
+     text-align: center;
+     letter-spacing: 2px;
+     font-weight: bold;
+}
+
+#generateBtn:active{
+     background: rgba(222, 184, 135, 0.438);
+     color: white;
+}
+
+#passwordLength{
+     text-align: center;
+     width: 50px;
+     height: 20px;
+}
+
+.password-container{
+     display: flex;
+}
+
+#copyBtn{
+     width: 40px;
+     border: none;
+     background: whitesmoke;
+     cursor: pointer;
+     border-top-right-radius: 10px;
+     border-bottom-right-radius: 10px;
+}
+
+#upperCaseCheckBox, #lowerCaseCheckBox, #numbersCheckBox, #symbolsCheckBox{
+     height: 25px;
+     width: 25px;
+}
+
+#passwordRangeInput{
+     width: 250px;
+}
+
+#copyTextIndicator{
+     position: relative;
+     margin: -15px;
+     opacity: 0;
+}
+
+#copyTextIndicator.active{
+     animation: FadeOut 1s ease-in-out 0s 1 normal none;
+}
+
+@keyframes FadeOut {
+	0% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+	}
+}
